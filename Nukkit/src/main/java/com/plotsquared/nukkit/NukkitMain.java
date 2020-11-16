@@ -3,6 +3,7 @@ package com.plotsquared.nukkit;
 import cn.nukkit.Nukkit;
 import cn.nukkit.OfflinePlayer;
 import cn.nukkit.Player;
+import cn.nukkit.Server;
 import cn.nukkit.entity.Entity;
 import cn.nukkit.entity.EntityHuman;
 import cn.nukkit.event.Listener;
@@ -75,6 +76,7 @@ public final class NukkitMain extends PluginBase implements Listener, IPlotMain 
 
     @Override
     public void onEnable() {
+        Server.getInstance().getLogger().info("§bMrClean's PlotSquared is starting ;)");
         try {
             this.name = getDescription().getName();
             getServer().getName();
